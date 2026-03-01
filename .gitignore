@@ -1,5 +1,8 @@
-# Dependencies
+# === FAST EXCLUSIONS (must be first — stops git scanning these trees) ===
 node_modules/
+web/node_modules/
+web/.next/
+.next/
 .pnp
 .pnp.js
 
