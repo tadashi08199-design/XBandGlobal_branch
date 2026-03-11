@@ -1,8 +1,9 @@
-﻿"use client"
+"use client"
 
 import Link from "next/link"
 import { motion, useScroll } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
+import { XbandLogo } from "@/components/ui/XbandLogo"
 
 function Clock() {
     const [time, setTime] = useState("")
@@ -28,8 +29,6 @@ function Clock() {
         </div>
     )
 }
-
-import { VistarLogo } from "@/components/ui/VistarLogo"
 
 export function Navbar() {
     const { scrollY } = useScroll()
@@ -61,9 +60,11 @@ export function Navbar() {
     }, [scrollY])
 
     const navLinks = [
-        { name: "Architecture", href: "#architecture" },
-        { name: "Method", href: "#method" },
-        { name: "Launch", href: "#get-started" },
+        { name: "Architecture", href: "/#architecture" },
+        { name: "Method", href: "/#method" },
+        { name: "Pricing", href: "/pricing" },
+        { name: "Contact", href: "/contact" },
+        { name: "Launch", href: "/#get-started" },
     ]
 
     return (
@@ -76,15 +77,17 @@ export function Navbar() {
                 "transition-[padding,transform,background-color,backdrop-filter,border-color] duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]",
                 isCompact
                     ? "py-5 bg-[#020817]/62 backdrop-blur-md border-b border-white/10"
-                    : "py-10 mix-blend-difference",
+                    : "py-10",
                 isHidden ? "-translate-y-[120%]" : "translate-y-0",
             ].join(" ")}
         >
             {/* Left Group: Branding + Nav */}
             <div className="flex items-center gap-24 pointer-events-auto">
                 <Link href="/" className="group flex items-center gap-4">
-                    <VistarLogo className="w-10 h-10 group-hover:scale-105 transition-transform duration-500" />
-                    <span className="text-3xl font-display uppercase tracking-[-0.05em] text-white group-hover:text-primary transition-colors duration-500">VISTAR</span>
+                    <XbandLogo className="h-10 w-10 relative z-10" />
+                    <span className="text-[1.45rem] sm:text-[1.6rem] font-medium tracking-[-0.02em] text-white/95 transition-colors duration-500 group-hover:text-primary">
+                        XBandGlobal
+                    </span>
                 </Link>
 
                 <nav className="hidden lg:flex items-center gap-12">
