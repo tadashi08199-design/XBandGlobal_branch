@@ -44,53 +44,28 @@
 
 @layer base {
   :root {
-    /* VISTAR ULTRA-PREMIUM IMMERSIVE THEME (JOONDALUP 2026 INSPIRED) */
-    --background: 222 47% 4%;
-    /* Deep Night Navy instead of flat black */
-    --foreground: 0 0% 100%;
+  --background: 0 0% 99%;
+  --foreground: 220 20% 15%;
+  --primary: 210 90% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 30% 95%;
+  --secondary-foreground: 220 20% 20%;
+  --muted: 215 20% 94%;
+  --muted-foreground: 215 15% 50%;
+  --accent: 190 80% 45%;
+  --accent-foreground: 0 0% 100%;
+  --border: 214 25% 90%;
+  --input: 214 25% 90%;
+  --ring: 210 90% 50%;
+  --destructive: 0 75% 55%;
+  --destructive-foreground: 0 0% 100%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 20% 15%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 20% 15%;
+  --radius: 0.5rem;
+}
 
-    --card: 222 47% 6%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 222 47% 2%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 45 90% 64%;
-    /* Vibrantly Luminous Gold */
-    --primary-foreground: 222 47% 4%;
-
-    --secondary: 222 25% 12%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 222 25% 12%;
-    --muted-foreground: 215 15% 65%;
-
-    --accent: 191 100% 50%;
-    /* Luminous Cyan Portal */
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 222 47% 12%;
-    --input: 222 47% 12%;
-    --ring: 45 90% 64%;
-
-    --radius: 2.5rem;
-    /* Extreme pill shapes for modern festival look */
-
-    /* JOONDALUP "MAGIC HOUR" GRADIENTS */
-    --gradient-1: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
-    --gradient-2: linear-gradient(135deg, #f2994a 0%, #f2c94c 100%);
-    --gradient-3: linear-gradient(135deg, #e85d04 0%, #f48c06 100%);
-    /* Warm sunrise accent */
-    --gradient-dark: linear-gradient(180deg, rgba(4, 9, 20, 0) 0%, rgba(4, 9, 20, 0.9) 100%);
-
-    /* Mesh Gradient Secrets */
-    --mesh-1: rgba(0, 210, 255, 0.15);
-    --mesh-2: rgba(242, 153, 74, 0.15);
-    --mesh-3: rgba(232, 93, 4, 0.14);
-  }
 
   * {
     @apply border-border outline-ring/50;
